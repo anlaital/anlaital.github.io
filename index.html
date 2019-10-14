@@ -21,17 +21,57 @@
       object-fit: cover;
       grid-row: 1;
       grid-column: 1;
-      animation: hevonen 1s;
-      animation-iteration-count: infinite;
     }
 
-    @keyframes hevonen {
-      from {
-        transform: none;
-      }
+    img.earth {
+      animation: earth 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: linear;
+    }
 
-      to {
-        transform: translateX(100px);
+    img.woman {
+      animation: woman 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: linear;
+    }
+
+    img.man {
+      animation: man 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: linear;
+    }
+
+    img.ring {
+      animation: ring 20s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: linear;
+    }
+
+    @keyframes earth {
+      from {
+        transform: translateX(-20px);
+      }
+    }
+
+    @keyframes woman {
+      from {
+        transform: translateX(120px);
+      }
+    }
+
+    @keyframes man {
+      from {
+        transform: translateX(60px);
+      }
+    }
+
+    @keyframes ring {
+      from {
+        transform: translateX(40px);
       }
     }
 
@@ -47,11 +87,11 @@
 <body>
   <div class="container">
     <img src="background_halo.png" />
-    <img src="earth.png" />
-    <img src="man_ring.png" />
-    <img src="woman_ring.png" />
+    <img class="earth" src="earth.png" />
+    <img class="man" src="man_ring.png" />
+    <img class="woman" src="woman_ring.png" />
     <img src="science_of_sleep_text.png" />
-    <img src="single_ring.png" />
+    <img class="ring" src="single_ring.png" />
   </div>
 </body>
 
