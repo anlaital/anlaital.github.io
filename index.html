@@ -21,6 +21,18 @@
       object-fit: cover;
       grid-row: 1;
       grid-column: 1;
+      animation: hevonen 1s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes hevonen {
+      from {
+        transform: none;
+      }
+
+      to {
+        transform: translateX(100px);
+      }
     }
 
     .container {
