@@ -16,19 +16,31 @@
       height: 100%;
     }
 
-    .img {
+    img {
       height: 100%;
-      width: 100%;
-      background-image: url('ring.png');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      object-fit: cover;
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
     }
   </style>
 </head>
 
 <body>
-  <div class="img" />
+  <div class="container">
+    <img src="background_halo.png" />
+    <img src="earth.png" />
+    <img src="man_ring.png" />
+    <img src="woman_ring.png" />
+    <img src="science_of_sleep_text.png" />
+    <img src="single_ring.png" />
+  </div>
 </body>
 
 </html>
