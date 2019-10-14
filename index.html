@@ -24,31 +24,38 @@
     }
 
     img.earth {
-      animation: earth 20s;
+      animation: earth 50s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      animation-timing-function: linear;
+      animation-timing-function: ease-out;
     }
 
     img.woman {
-      animation: woman 20s;
+      animation: woman 50s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      animation-timing-function: linear;
+      animation-timing-function: ease-out;
     }
 
     img.man {
-      animation: man 20s;
+      animation: man 50s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      animation-timing-function: linear;
+      animation-timing-function: ease-out;
     }
 
     img.ring {
-      animation: ring 20s;
+      animation: ring 50s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse;
-      animation-timing-function: linear;
+      animation-timing-function: ease-out;
+    }
+
+    img.text {
+      animation: text 50s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-out;
     }
 
     @keyframes earth {
@@ -75,6 +82,12 @@
       }
     }
 
+    @keyframes earth {
+      from {
+        transform: translateX(20px);
+      }
+    }
+
     .container {
       height: 100%;
       display: grid;
@@ -90,7 +103,7 @@
     <img class="earth" src="earth.png" />
     <img class="man" src="man_ring.png" />
     <img class="woman" src="woman_ring.png" />
-    <img src="science_of_sleep_text.png" />
+    <img class="text" src="science_of_sleep_text.png" />
     <img class="ring" src="single_ring.png" />
   </div>
 </body>
